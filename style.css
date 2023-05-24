@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secundary: 'DM Sans', sans-serif;
+  --font-text-cookie: 'Dancing Script', cursive;
+
+  --color-tittle: #34355B;
+  --color-button: #FFFFFF;
+
+  --bg-text-cookie: #E4EDF1;
+  --bg-body: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+  --bg-button: #FF9500;
+  --bg-hover: #ef910d;
+}
+
+@keyframes tremer {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  20%{
+    transform: rotate(2deg);
+  }
+
+  40%{
+    transform: rotate(-1deg);
+  }
+
+  60%{
+    transform: rotate(2deg);
+  }
+
+  80%{
+    transform: rotate(-1deg);
+  }
+
+  100%{
+    transform: rotate(0);
+  }
+}
+
+@keyframes upMessage{
+  0%{
+    opacity: 0;
+    transform: translateY(160px) scale(0.2);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+body{
+  height: 100vh;
+  background: var(--bg-body);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+
+  display: flex;
+}
+
+main{
+  background: #FFFFFF;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+
+  width: 428px;
+  padding: 48px 64px 64px 64px;
+
+  margin: auto;
+  
+  text-align: center;
+}
+
+h1{
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: var(--color-tittle);
+}
+
+.screen1 h1{
+  margin-bottom: 14px;
+}
+
+.screen1 p{
+  font-family: var(--font-secundary);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: var(--color-tittle);
+
+  margin-bottom: 20px;
+}
+
+img{
+  width: 300px;
+  height: 200px;
+}
+
+.screen1 img:hover{
+  cursor: pointer;
+  animation: tremer 0.25s ease-in-out infinite;
+}
+
+.hide{
+  display: none;
+}
+
+.card{
+  animation: upMessage 1.5s ease-out forwards;
+}
+
+.screen2 p{
+  font-family: var(--font-text-cookie);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  background-color: var(--bg-text-cookie);
+
+  margin: 17px 0;
+  padding: 10px;
+
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+
+}
+
+button{
+  font-family: var(--font-secundary);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+
+  background: var(--bg-button);
+  color: var(--color-button);
+
+  margin-top: 17px;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover{
+  cursor: pointer;
+  background: var(--bg-hover);
+  scale: 1.1;
+}
