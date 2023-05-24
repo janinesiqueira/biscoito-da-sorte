@@ -11,4 +11,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - JavaScript
 
 ## 💻 Projeto
+É um jogo chamado Biscoito da Sorte, no qual o usuário, a partir de um clique, abre um biscoito com a sua sorte do dia.
+
+## 🔖 Layout
 Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1182751789348533739) É necessário ter conta no [Figma](https://www.figma.com/) para acessá-lo.
